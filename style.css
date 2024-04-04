@@ -34,5 +34,5 @@ video {
     width: 100% !important;
     height: 100% !important;
     margin: 0 !important;
-    object-fit: contain !important;
+    /* object-fit: contain !important; */
 }
