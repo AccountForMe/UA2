@@ -2,50 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <!-- include A-Frame obviously -->
     <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
     <!-- include ar.js for A-Frame -->
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    <style>
-        body {
-            margin: 0;
-            overflow-x: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f1f1f1;
-        }
-        .menu-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 300px;
-            height: 100vh;
-            background-image: url('path_to_your_image.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
-            background-size: auto 100%; /* Scale width automatically and repeat vertically */
-            background-repeat: repeat; /* Repeat texture */
-            transition: right 0.3s;
-            z-index: 1;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .menu-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 15px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 2;
-        }
-    </style>
 </head>
 <body>
     <button class="menu-button" onclick="toggleMenu()">Open Menu</button>
@@ -56,19 +19,12 @@
         <button>Button 2</button>
     </div>
     <a-scene arjs>
-        <a-assets></a-assets>
+        <a-assets>
+            
+        </a-assets>
         <a-box position='0 0 0'></a-box>
         <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector('.menu-container');
-            if (menu.style.right === '0px') {
-                menu.style.right = '-300px';
-            } else {
-                menu.style.right = '0px';
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
