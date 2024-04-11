@@ -17,6 +17,29 @@
         <p>This is a menu with some text and buttons.</p>
         <button>Button 1</button>
         <button>Button 2</button>
+        <div class="container">
+            <h1>Combination Lock</h1>
+            <div class="combination">
+                <button onclick="changeDigit(-1, 0)">▲</button>
+                <button onclick="changeDigit(-1, 1)">▲</button>
+                <button onclick="changeDigit(-1, 2)">▲</button>
+                
+                
+            </div>
+            <div class="combination">
+                
+                <span id="digit1">0</span>
+                <span id="digit2">0</span>
+                <span id="digit3">0</span>
+                
+            </div>
+            <div class="combination">
+                <button onclick="changeDigit(1, 0)">▼</button>
+                <button onclick="changeDigit(1, 1)">▼</button>
+                <button onclick="changeDigit(1, 2)">▼</button>
+            </div>
+            <button onclick="checkCombination()">Submit</button>
+        </div>
     </div>
     <a-scene arjs>
         <a-assets>
