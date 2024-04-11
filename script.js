@@ -3,11 +3,17 @@ var maxDigitValue = 9; // Maximum digit value
 
 function toggleMenu() {
     var menu = document.querySelector('.menu-container');
-    if (menu.style.right === '-300px') {
-        menu.style.right = '0';
+    if (menu.classList.contains("open")) {
+        console.log('300');
+        menu.classList.add("closed")
+        menu.classList.remove("open")
     } else {
-        menu.style.right = '-300px';
+        console.log('-300');
+        menu.classList.add("open")
+        menu.classList.remove("closed")
     }
+
+    
 }
 
 
@@ -26,3 +32,5 @@ function checkCombination() {
     // Implement your logic here to check the combination
     alert('Combination: ' + combination.join(''));
 }
+
+
