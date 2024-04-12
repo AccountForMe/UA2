@@ -3,18 +3,23 @@ var maxDigitValue = 9; // Maximum digit value
 
 function toggleMenu() {
     var menu = document.querySelector('.menu-container');
+    var box = document.querySelector('.menu-button');
+    
+
     if (menu.classList.contains("open")) {
         console.log('300');
-        menu.classList.add("closed")
-        menu.classList.remove("open")
+        menu.classList.add("closed");
+        menu.classList.remove("open");
+        
     } else {
         console.log('-300');
-        menu.classList.add("open")
-        menu.classList.remove("closed")
+        menu.classList.add("open");
+        menu.classList.remove("closed");
+        box.classList.remove("startanimation")
     }
-
-    
 }
+
+
 
 
 
@@ -29,8 +34,11 @@ function changeDigit(change, digitIndex) {
 }
 
 function checkCombination() {
-    // Implement your logic here to check the combination
-    alert('Combination: ' + combination.join(''));
+    var targetCombination = [6, 8, 4]; // The target combination to match
+    if (combination.join('') === targetCombination.join('')) {
+        console.log('Victory!');
+    }
 }
+
 
 

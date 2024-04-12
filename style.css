@@ -34,13 +34,13 @@ body {
     border: 10px solid transparent; /* Initial transparent border */
     cursor: pointer;
     z-index: 2;
+}
+
+.startanimation {
     animation: rainbow 3s linear infinite; /* Start animation after 3 seconds */
     animation-delay: 3s; /* Delay the start of animation by 3 seconds */
 }
 
-.menu-button.shine {
-    animation-play-state: paused; /* Pause animation when 'shine' class is added */
-}
 
 
 @keyframes rainbow {
