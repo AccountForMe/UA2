@@ -2,6 +2,12 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
+#message {
+    padding-top: 30%; /* Adjust the padding as needed */
+    color: white;
+}
+
 .menu-container {
     position: fixed;
     top: 0;

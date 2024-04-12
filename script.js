@@ -36,9 +36,10 @@ function changeDigit(change, digitIndex) {
 function checkCombination() {
     var targetCombination = [6, 8, 4]; // The target combination to match
     if (combination.join('') === targetCombination.join('')) {
-        console.log('Victory!');
+        alert('Victory!');
     }
 }
+
 
 
 
