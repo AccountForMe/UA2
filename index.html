@@ -46,9 +46,10 @@
     </div>
     <a-scene arjs>
         <a-assets>
-            
+            <a-asset-item id="cube" src="cube.glb"></a-asset-item>
         </a-assets>
-        <a-box position='0 0 0'></a-box>
+        <a-entity position='0 0 0' gltf-model="#cube" scale="1 1 1"></a-entity>
+        <!-- <a-box position='0 0 0'></a-box> -->
         <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
     <script src="script.js"></script>
